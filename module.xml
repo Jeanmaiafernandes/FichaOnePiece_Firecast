@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module sdkVersion="3.7b">
+    <id>one_piece_cmfz</id>
+    <version>1.0</version>
+    
+    <forms>
+        <form file="ficha.lfm" type="characterSheet" dataType="OpRPG"/>
+    </forms>
+    <forms>
+        <form file="pericias/pericias.lfm" type="subForm"/>
+    </forms>
+    
+    <info lang="pt-BR">
+        <!--Informações do plugin na língua "pt-BR". Você pode ter várias tags "info", uma para cada tradução que quiser.-->
+        <author>jeancmfz</author>
+        <name>Ficha-one-piece-rpg</name>
+        <description>ficha do rpg de one piece do bryan</description>
+        <site>http://www.recebaaaa.com.br</site>
+        <contact>jurisol@gmail.com</contact>
+    </info>
+</module>

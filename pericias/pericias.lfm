@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form formType="sheetTemplate" name="frmPericias" title="OpPericias" width="800" height="600" dataType="OpPericias">
+    <!-- Coluna Esquerda -->
+ <layout left="20" top="30" width="700" height="500">
+    
+    <!-- Coluna Esquerda - Perícias Físicas -->
+    <layout left="0" top="0" width="340" height="500">
+      <label left="0" top="0" text="PERÍCIAS FÍSICAS" width="340" fontStyle="bold" fontSize="12"/>
+      
+      <!-- Linha Atletismo -->
+      <layout left="0" top="30" width="340" height="25">
+        <label left="0" top="0" text="Atletismo" width="150" wordWrap="false"/>
+        <checkBox left="160" top="0" field="profAtletismo"/>
+        <label left="180" top="0" text="FOR" width="40" horzTextAlign="center"/>
+        <label left="230" top="0" field="totalAtletismo" width="60" horzTextAlign="center" format="%.1f"/>
+      </layout>
+      
+      <!-- Linha Acrobacia -->
+      <layout left="0" top="55" width="340" height="25">
+        <label left="0" top="0" text="Acrobacia" width="150" wordWrap="false"/>
+        <checkBox left="160" top="0" field="profAcrobacia"/>
+        <label left="180" top="0" text="DES" width="40" horzTextAlign="center"/>
+        <label left="230" top="0" field="totalAcrobacia" width="60" horzTextAlign="center" format="%.1f"/>
+      </layout>
+      
+      <!-- Linha Furtividade -->
+      <layout left="0" top="80" width="340" height="25">
+        <label left="0" top="0" text="Furtividade" width="150" wordWrap="false"/>
+        <checkBox left="160" top="0" field="profFurtividade"/>
+        <label left="180" top="0" text="DES" width="40" horzTextAlign="center"/>
+        <label left="230" top="0" field="totalFurtividade" width="60" horzTextAlign="center" format="%.1f"/>
+      </layout>
+    </layout>
+    
+    <!-- Coluna Direita - Perícias Sociais -->
+    <layout left="230" top="0" width="340" height="500">
+      <label left="0" top="0" text="PERÍCIAS SOCIAIS" width="340" fontStyle="bold" fontSize="12"/>
+      
+      <!-- Linha Enganação -->
+      <layout left="0" top="30" width="340" height="25">
+        <label left="0" top="0" text="Enganação" width="150" wordWrap="false"/>
+        <checkBox left="160" top="0" field="profEnganacao"/>
+        <label left="180" top="0" text="PRE" width="40" horzTextAlign="center"/>
+        <label left="230" top="0" field="totalEnganacao" width="60" horzTextAlign="center" format="%.1f"/>
+      </layout>
+      
+      <!-- Linha Intimidação -->
+      <layout left="0" top="55" width="340" height="25">
+        <label left="0" top="0" text="Intimidação" width="150" wordWrap="false"/>
+        <checkBox left="160" top="0" field="profIntimidacao"/>
+        <label left="180" top="0" text="PRE" width="40" horzTextAlign="center"/>
+        <label left="230" top="0" field="totalIntimidacao" width="60" horzTextAlign="center" format="%.1f"/>
+      </layout>
+      
+      <!-- Linha Persuasão -->
+      <layout left="0" top="80" width="340" height="25">
+        <label left="0" top="0" text="Persuasão" width="150" wordWrap="false"/>
+        <checkBox left="160" top="0" field="profPersuasao"/>
+        <label left="180" top="0" text="PRE" width="40" horzTextAlign="center"/>
+        <label left="230" top="0" field="totalPersuasao" width="60" horzTextAlign="center" format="%.1f"/>
+      </layout>
+    </layout>
+  </layout>
+</form>

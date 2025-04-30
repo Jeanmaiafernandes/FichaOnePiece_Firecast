@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form formType="sheetTemplate" name="frmOnePiece" dataType="OpRPG" title="OpFicha">
+
+    <!-- SEÇÃO DE ATRIBUTOS PRINCIPAIS -->
+    <layout left="20" top="20" width="400" height="300">
+        <!-- CABEÇALHO -->
+        <label text="ATRIBUTOS" left="10" top="10" width="380" fontStyle="bold" fontSize="14"/>
+        
+        <!-- FORÇA -->
+        <layout left="10" top="40" width="210" height="25">
+            <label text="Força:" align="left" width="100" autoSize="true"/>
+            <edit field="forca" align="client" horzTextAlign="center" width="50"/>
+            <label field="modificadorForca" align="right" width="70" horzTextAlign="center"/>
+        </layout>
+        
+        <!-- DESTREZA -->
+        <layout left="10" top="70" width="210" height="25">
+            <label text="Destreza:" align="left" width="100" autoSize="true"/>
+            <edit field="destreza" align="client" horzTextAlign="center" width="50"/>
+            <label field="modificadorDestreza" align="right" width="70" horzTextAlign="center"/>
+        </layout>
+        
+        <!-- CONSTITUIÇÃO -->
+        <layout left="10" top="100" width="210" height="25">
+            <label text="Constituição:" align="left" width="100" autoSize="true"/>
+            <edit field="constituicao" align="client" horzTextAlign="center" width="50"/>
+            <label field="modificadorConstituicao" align="right" width="70" horzTextAlign="center"/>
+        </layout>
+
+        <!-- SABEDORIA -->
+        <layout left="10" top="130" width="210" height="25">
+            <label text="Sabedoria:" align="left" width="100" autoSize="true"/>
+            <edit field="sabedoria" align="client" horzTextAlign="center" width="50"/>
+            <label field="modificadorSabedoria" align="right" width="70" horzTextAlign="center"/>
+        </layout>
+
+        <!-- PRESENÇA -->
+        <layout left="10" top="160" width="210" height="25">
+            <label text="Presença:" align="left" width="100" autoSize="true"/>
+            <edit field="presenca" align="client" horzTextAlign="center" width="50"/>
+            <label field="modificadorPresenca" align="right" width="70" horzTextAlign="center"/>
+        </layout>
+
+        <!-- VONTADE -->
+        <layout left="10" top="190" width="210" height="25">
+            <label text="Vontade:" align="left" width="100" autoSize="true"/>
+            <edit field="vontade" align="client" horzTextAlign="center" width="50"/>
+            <label field="modificadorVontade" align="right" width="70" horzTextAlign="center"/>
+        </layout>
+    </layout>
+
+        <!-- CÁLCULOS AUTOMÁTICOS -->
+    <dataLink field="forca">
+        <event name="onChange">
+            local mod = math.floor(((sheet.forca or 10) / 2) - 5)
+            sheet.modificadorForca = (mod >= 0) and ("+"..mod) or mod
+        </event>
+    </dataLink>
+    
+    <dataLink field="destreza">
+        <event name="onChange">
+            local mod = math.floor(((sheet.destreza or 10) / 2) - 5)
+            sheet.modificadorDestreza = (mod >= 0) and ("+"..mod) or mod
+        </event>
+    </dataLink>
+
+    <dataLink field="constituicao">
+        <event name="onChange">
+            local mod = math.floor(((sheet.constituicao or 10) / 2) - 5)
+            sheet.modificadorConstituicao = (mod >= 0) and ("+"..mod) or mod
+        </event>
+    </dataLink>
+
+    <dataLink field="sabedoria">
+        <event name="onChange">
+            local mod = math.floor(((sheet.sabedoria or 10) / 2) - 5)
+            sheet.modificadorSabedoria = (mod >= 0) and ("+"..mod) or mod
+        </event>
+    </dataLink>
+
+    <dataLink field="presenca">
+        <event name="onChange">
+            local mod = math.floor(((sheet.presenca or 10) / 2) - 5)
+            sheet.modificadorPresenca = (mod >= 0) and ("+"..mod) or mod
+        </event>
+    </dataLink>
+
+    <dataLink field="vontade">
+        <event name="onChange">
+            local mod = math.floor(((sheet.vontade or 10) / 2) - 5)
+            sheet.modificadorVontade = (mod >= 0) and ("+"..mod) or mod
+        </event>
+    </dataLink>
+</form>
